@@ -61,16 +61,17 @@ HALF SUBTRACTOR
 5.	For different input combinations generate the timing diagram.
 
 
-*Program:*
 
+**Program:**
 
+```
 Program to design a half adder and half subtractor circuit and verify its truth table in quartus using Verilog programming.
 Developed by:SAMRITHA.G
 RegisterNumber:25011974
 
-
-*Half Adder*
-
+```
+**Half Adder**
+```
 module half_adder (
     input  wire a, b,     // Inputs
     output wire sum,      // Sum output
@@ -83,9 +84,9 @@ module half_adder (
 
 endmodule
 
-
-*Half Subtractor*
-
+```
+**Half Subtractor**
+```
 module half_subtractor (
     input  wire a, b,         // Inputs
     output wire diff, borrow  // Outputs
@@ -95,6 +96,7 @@ module half_subtractor (
     assign borrow = ~a & b;    // Borrow when a < b
 
 endmodule
+```
 
 *RTL Schematic*
 *Half Adder*
